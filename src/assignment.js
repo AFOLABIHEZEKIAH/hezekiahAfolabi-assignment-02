@@ -16,7 +16,21 @@ const assignment = {};
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+function sumOfNumbers(arrayOfNumbers) {
+
+    var total=0;
+    for (var i in arrayOfNumbers){
+    total+= arrayOfNumbers[i];
+}
+
+return total;
+}
+
+let Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var sum= sumOfNumbers(Numbers)
+
+console.log(sum)
 
 /**
  * Challenge - 2
@@ -30,7 +44,20 @@ function sumOfNumbers(arrayOfNumbers) {
 function countEvenNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+function countEvenNumbers(array){
+	var count = 0;
+	for(let i = 0 ; i < array.length; i++) {
+		if (array[i] % 2 === 0){
+			count++;
+		}
+	}
+	return count;
+}
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var Count_even= countEvenNumbers(arr)
+
+console.log(Count_even)
 
 /**
  * Challenge - 3
